@@ -3,7 +3,6 @@ import tkinter
 import tkinter as tk
 from config_snake import *
 
-
 class SnakeGame:
     def __init__(self, root):
         self.root = root
@@ -116,7 +115,7 @@ class SnakeGame:
     def game_over(self):
         self.running = False
         self.canvas.create_text(WIDTH//2, HEIGHT//2, text=f"Game over \nScore {self.score}", fill="white", font=("Arial", 20))
-        self.root.after(3000, self.create_menu)
+        self.root.after(2000, self.create_menu)
 
     def update(self):
         if not self.running or self.paused:

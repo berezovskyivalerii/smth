@@ -1,0 +1,16 @@
+Тесты с покрытием:
+    pytest -q --cov=main --cov-report=term-missing 
+
+Тесты без покрытия (все):
+    python -m pytest -q
+
+Создать и активировать виртуальное окружение:
+    python3 -m venv .venv
+    source .venv/bin/activate
+    python -m pip install -U pip
+
+Запустить файл requirements.txt:
+    python -m pip install -r requirements.txt
+
+Создание .xml файла с тестами
+    pytest -v --junitxml=report.xml 
